@@ -20,13 +20,22 @@
 
 .main .products {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-top: 20px;
     flex-wrap: wrap;
+
+    gap: 22px;
+    justify-content: center;
 }
 
-.main .product_item{
+.main .product_item {
     margin-top: 30px;
+    border: 1px solid #efefef;
+    padding: 10px;
+}
+
+.main .product_item:hover {
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
 }
 
 .main .product_item a {
@@ -46,7 +55,8 @@
 }
 
 .main .product_name {
-    font-weight: 500;    margin-top: 10px;
+    font-weight: 500;
+    margin-top: 10px;
 }
 
 .main .product_tag {
@@ -60,4 +70,16 @@
     font-size: 16px;
     margin: 7px 0;
 
+}
+
+.main .btn {
+    background-color: #f72b3f;
+    border: none;
+    width: 100%;
+    opacity: 0;
+}
+
+.main .product_item:hover .btn {
+    opacity: 1;
+    transition: all 0.5;
 }

@@ -1,0 +1,142 @@
+.footer {
+    margin-top: 50px;
+}
+
+.footer .hastag {
+    height: 55px;
+    background-color: #212121;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.hastag .tag-name {
+    color: #034ea1;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 4px;
+}
+
+.footer .wrapper {
+    display: flex;
+
+}
+
+.footer .item {
+    width: calc(100%/8);
+    overflow: hidden;
+}
+
+.footer .item img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.01);
+    transition: 1s ease;
+}
+
+.footer .item:hover img {
+    transform: scale3d(1.1, 1.1, 1);
+    transition: 1s ease;
+    cursor: pointer;
+
+}
+
+.newsletter {
+    border-width: 1px 0 1px 0;
+    border-color: #e4e4e4;
+    border-style: solid;
+    padding: 5px 0;
+}
+
+.newsletter .container {
+    max-width: 1200px;
+}
+
+.newsletter .newsletter-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+.newsletter .newsletter_description {
+    width: 40%;
+    color: #212121;
+    font-weight: 300;
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.newsletter .frmNewsLetter {
+    width: 60%;
+}
+
+.newsletter .frmNewsLetter input {
+    width: 68%;
+    float: left;
+    border: 1px solid #ccc;
+    font-weight: 400;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #212121;
+    height: 34px;
+}
+
+.frmNewsLetter input:focus {
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+}
+
+.frmNewsLetter input:focus-visible {
+    outline: none;
+}
+
+.newsletter .frmNewsLetter button {
+    width: 30%;
+    float: right;
+    background: #f72b3f;
+    color: #fff;
+    font-weight: 400;
+    color: #fff;
+    height: 34px;
+    border: none;
+
+}
+
+.footer-bottom {
+    margin-top: 40px;
+}
+
+.footer-bottom .container {
+    max-width: 1200px;
+}
+
+.footer-bottom .footer_block_title {
+    color: #000000;
+    font-weight: 500;
+    position: relative;
+    font-size: 18px;
+    text-align: left;
+}
+
+.footer-bottom ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+.footer-bottom ul li a {
+    color: #666666;
+    display: block;
+    padding: 10px 0;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.footer-bottom ul li a:hover {
+    color: #f72b3f;
+    transition: 0.5s;
+}
