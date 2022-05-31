@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import "../css/bitisShop.css";
+import ProductDetail from "./ProductDetail";
 
 export default class BitisShop extends Component {
+  
   render() {
-    const { products } = this.props;
+    const { productDetail,onSelect,products } = this.props;
 
     return (
       <div className="main">
@@ -12,10 +14,9 @@ export default class BitisShop extends Component {
           <div className="row">
             <div className="col">
               <div className="products">
-                {
-                  products.map((item)=>{
-                    return(
-                      <div key={item.id} className="product_item">
+                {products.map((item) => {
+                  return (
+                    <div key={item.id} className="product_item">
                       <a href="#">
                         <div className="product_img">
                           <img src={item.image}></img>
@@ -25,17 +26,18 @@ export default class BitisShop extends Component {
                           <div className="product_tag">{item.alias}</div>
                           <div className="product_price">{item.price} $</div>
                         </div>
-                        <button className="btn btn-success">Mua hàng</button>
+                        
+                       
                       </a>
+                      <button className="btn btn-success"onClick={()=>{onSelect(item)}}>Mua hàng</button>
+                     
                     </div>
-                    )
-                  })
-                }
-               
-                
+                  );
+                })}
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     );
