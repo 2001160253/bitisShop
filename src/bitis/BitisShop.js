@@ -27,6 +27,8 @@ export default class BitisShop extends Component {
                         </div>
                       </a>
                       <button
+                       data-bs-toggle="modal"
+                       data-bs-target="#exampleModal2"
                         className="btn btn-success "
                         onClick={() => {
                           onSelect(item);

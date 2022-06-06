@@ -114,7 +114,7 @@ export default class Header extends Component {
                     src="https://cdn-icons-png.flaticon.com/512/263/263142.png"
                     className="cart"
                   ></img>
-                  <span>{this.props.count}</span>
+                  {/* <span>{this.props.count}</span> */}
                 </div>
               </div>
             </div>

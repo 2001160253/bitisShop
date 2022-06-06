@@ -11,11 +11,11 @@ export default class Cart extends Component {
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog">
+        <div class="modal-dialog" style={{maxWidth: "1200px"}}>
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">
-                Giỏ hàng: <span>{count}</span>
+                {/* Giỏ hàng: <span>{count}</span> */}
               </h5>
               <button
                 type="button"
