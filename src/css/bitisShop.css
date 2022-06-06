@@ -84,3 +84,12 @@
     transition: all 0.5;
 }
 
+
+
+.cart-add-neg {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #7e7272;
+    font-size: 13px;
+    margin-right: 10px;
+}

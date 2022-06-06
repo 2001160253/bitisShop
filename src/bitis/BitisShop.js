@@ -3,12 +3,11 @@ import "../css/bitisShop.css";
 import ProductDetail from "./ProductDetail";
 
 export default class BitisShop extends Component {
-  
   render() {
-    const { productDetail,onSelect,products } = this.props;
+    const { onBuy, onSelect, products } = this.props;
 
     return (
-      <div className="main">
+      <div className="main" style={{ paddingBottom: "50px" }}>
         <div className="container">
           <h1 className="heading">Dành Riêng Cho Bạn</h1>
           <div className="row">
@@ -26,18 +25,32 @@ export default class BitisShop extends Component {
                           <div className="product_tag">{item.alias}</div>
                           <div className="product_price">{item.price} $</div>
                         </div>
-                        
-                       
                       </a>
-                      <button className="btn btn-success"onClick={()=>{onSelect(item)}}>Mua hàng</button>
-                     
+                      <button
+                        className="btn btn-success "
+                        onClick={() => {
+                          onSelect(item);
+                        }}
+                      >
+                        Xem chi tiết
+                      </button>
+                      <button
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        className="btn btn-success "
+                        style={{ marginTop: "10px" }}
+                        onClick={() => {
+                          onBuy(item);
+                        }}
+                      >
+                        Thêm vào giỏ
+                      </button>
                     </div>
                   );
                 })}
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     );
